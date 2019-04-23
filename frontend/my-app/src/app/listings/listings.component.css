@@ -1,0 +1,16 @@
+table {
+  width: 95%;
+  margin: 30px;
+  margin-top: 0px !important;
+}
+header {
+  background: #ecf5f4;
+  margin: 30px;
+  margin-bottom: 0px !important;
+  margin-right: 25px!important;
+}
+
+.update-btn{
+  background:#497ECC;
+  color:white;
+}

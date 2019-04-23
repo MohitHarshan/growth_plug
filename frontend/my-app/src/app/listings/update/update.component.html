@@ -1,0 +1,8 @@
+<div class="form-container">
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)" fxLayout="column">
+  <mat-form-field  >
+    <input matInput placeholder="Page About" formControlName="about">
+    </mat-form-field >
+      <button type="submit" mat-raised-button style="width:100px;">Submit</button>
+</form>
+</div>

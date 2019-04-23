@@ -1,0 +1,44 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav class="sidenav" #sidenav mode="side" opened="true">
+    <mat-nav-list>
+      <mat-list-item class="heading">
+        <a matLine>GROWTH PLUG</a>
+      </mat-list-item>
+      <mat-list-item >
+      <mat-icon matListIcon>home</mat-icon> <a matLine>Dashboard</a>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>chrome_reader_mode</mat-icon>
+        <a matLine>Website</a>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>person</mat-icon>
+        <a matLine>Visitors</a>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>star</mat-icon>
+        <a matLine>Reviews</a>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['listings']">
+        <mat-icon matListIcon>list</mat-icon>
+        <a matLine>Listings</a>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>calendar_today</mat-icon>
+        <a matLine >Appointments</a>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>settings</mat-icon>
+        <a matLine >Settings</a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="content" fxLayout="column">
+    <mat-toolbar class="mat-elevation-z1" fxLayout="row">
+      <div fxFlex fxLayoutAlign="end start">
+        San Jose, CA
+      </div>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

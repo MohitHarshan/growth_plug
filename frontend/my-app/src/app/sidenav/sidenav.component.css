@@ -1,0 +1,30 @@
+
+.example-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.sidenav{
+background: #28BBAB;
+width:200px;
+}
+mat-sidenav-content{
+  background: #eee;
+}
+
+.mat-list-item{
+color:white;
+font-weight: bold;
+}
+
+.heading{
+  background: #00AC99;
+}
+.mat-toolbar{
+  background: white;
+}
+
+
