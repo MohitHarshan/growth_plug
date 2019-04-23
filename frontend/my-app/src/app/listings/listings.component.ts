@@ -45,7 +45,7 @@ export class ListingsComponent implements OnInit{
 
   ngOnInit() {
     this.facebookService.getFacebookPage().subscribe(res => {
-      this.dataSource.push(new Social("facebook","Facebook",res['name'],res['location']['street'],res['about'],"2/5","yes"))
+      this.dataSource[4]=new Social("facebook","Facebook",res['name'],res['location']['street'],res['about'],"2/5","yes")
       this.dataSource = [...this.dataSource];
     });
   }
